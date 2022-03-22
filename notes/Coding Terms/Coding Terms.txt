@@ -1,0 +1,9 @@
+Deck: A collection of items that have their own space on the screen. The items that the player has
+	out during encounters is a deck. The player's items they have when trading them out during the
+	sorting state is a deck.
+
+Hand: A deck that is out during an encounter such as the player's or a trader's
+
+Pack: These are the items the player cannot access during encounters and must use them during the sort state
+
+Inventory: Both the player's Hand and Pack combined. Whatever the player currently has on them
