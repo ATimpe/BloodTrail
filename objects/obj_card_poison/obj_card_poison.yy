@@ -36,8 +36,6 @@
   },
   "resourceVersion": "1.0",
   "name": "obj_card_poison",
-  "tags": [
-    "card_rare",
-  ],
+  "tags": [],
   "resourceType": "GMObject",
 }

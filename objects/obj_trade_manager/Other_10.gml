@@ -3,6 +3,14 @@
 var _playerOfferList = player_offer_list;
 var _npcOfferList = npc_offer_list;
 
+// Searches through your offer for a poisoned chalice. If you are offering one, it ends trading permanantly
+for (var i = 0; i < ds_list_size(player_offer_list); i++) {
+	if (object_is_ancestor(player_offer_list[| i].object_index, obj_cup)) {
+		if (player_offer_list[| i].poisoned)
+			global.trade_blocked = true;
+	}
+}
+
 with (obj_item_manager) {
 	var i, _playerGold = 0, _npcGold = 0, _newGold;
 	for (i = 0; i < ds_list_size(player_hand.d); i++) {
@@ -80,5 +88,5 @@ with (obj_item_manager) {
 	}
 		
 	refreshItemDisplay(npc_hand, player_hand);
-	encounterTradeEnd();
+	endEncounter();
 }

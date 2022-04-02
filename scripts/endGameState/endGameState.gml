@@ -1,7 +1,5 @@
 // called when switching between game states
 function endGameState(_state){
-	global.game_state = _state;
-	
 	switch (_state) {
 		case gameState.trading:
 			instance_destroy(obj_trade_btn);
@@ -20,13 +18,25 @@ function endGameState(_state){
 		
 		case gameState.invSort:
 			instance_destroy(obj_invsort_btn);
-			with (obj_item_manager) { setDeckHidden(player_inv); }
+			with (obj_item_manager) { 
+				ds_list_clear(items_selected_list);
+			}
 			break;
 		
 		case gameState.itemPick:
 			with (obj_item_manager) { 
 				deckReset(npc_hand);
 				setDeckHidden(npc_hand);
+			}
+			break;
+		
+		case gameState.fight:
+			instance_destroy(obj_fight_btn);
+			with (obj_game_manager) {
+				enemy_atk = 0;
+				fight_difference = 0;
+				fight_start = false;
+				player_fight_roll = 0;
 			}
 			break;
 	}

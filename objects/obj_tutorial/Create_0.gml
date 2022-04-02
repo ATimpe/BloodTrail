@@ -5,7 +5,7 @@ state = 0;
 
 runTextFile("tutorial1.txt", function() {
 	with (obj_item_manager) {
-		addItem(newChalice(obj_chal, 2), player_hand);
+		addItem(newChalice(obj_cup_chal, 2), player_hand);
 		refreshItemDisplayBottom(player_hand);
 	}
 	runTextFile("tutorial2.txt", function() {

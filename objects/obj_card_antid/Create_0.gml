@@ -7,4 +7,4 @@ uses = 3;
 card_type = cardUse.active;
 card_name = "Antidote";
 card_desc = "Can be used to cure poison.";
-price = 10;
+price = 21;

@@ -1,0 +1,1 @@
+pressed = false;      // If the button is currently being pressed

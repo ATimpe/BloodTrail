@@ -1,0 +1,5 @@
+Your body is now laced with poison.
+A somewhat different status than most others.
+The number to its side normally indicates how many turns you have left before the status is relieved.
+In this case, the number next to the poisoned status is how many turns you have left to live.
+You best be looking for an antidote. The poison is not forgiving.

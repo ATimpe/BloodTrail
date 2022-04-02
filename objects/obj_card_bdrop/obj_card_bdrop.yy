@@ -31,13 +31,13 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Common",
-    "path": "folders/Objects/Cards/Common.yy",
+    "name": "Uncommon",
+    "path": "folders/Objects/Cards/Uncommon.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_card_bdrop",
   "tags": [
-    "card_common",
+    "card_uncommon",
   ],
   "resourceType": "GMObject",
 }

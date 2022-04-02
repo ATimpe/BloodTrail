@@ -1,2 +1,3 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @desc Button for tutorial
+
+event_inherited();

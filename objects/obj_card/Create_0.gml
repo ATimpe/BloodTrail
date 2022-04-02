@@ -1,5 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @desc Card variables
 
 event_inherited();
 
@@ -11,6 +10,8 @@ enum cardUse {
 
 uses = 3;
 card_type = cardUse.active;
-card_name = "Keen Perception";
-card_desc = "Allows you to see someone elses Karma.";
+card_activated = false;
+card_name = "";
+card_desc = "";
+display_desc = false;
 price = 0;

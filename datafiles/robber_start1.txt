@@ -1,0 +1,10 @@
+While walking down the path, you hear a gruff voice behind you.
+>The Robber
+Alright bucko, hand over the goods.
+You turn around with your hands up to see a man wearing a bandana around his face and weilding a knife.
+>The Robber
+Well what'll it be buddy, I ain't got all day.
+*op
+*Surrender the the bandit #encounterRobberSurrender
+*Pick a fight with the grifter #encounterRobberFight
+*Try and run away while you can #encounterRobberRun

@@ -1,2 +1,3 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @desc This button starts the game
+
+event_inherited();

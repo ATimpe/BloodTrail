@@ -13,6 +13,8 @@ if (file_exists(fname)) {
 	file_text_close(file);
 	
 	parseDialogLine();
+	
+	// Performs the draw event again so that it can reset the display_str
 } else {
-	throw("ERROR: dialogue file not found.");
+	throw ("ERROR: dialogue file not found: " + fname);
 }

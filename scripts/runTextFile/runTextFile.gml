@@ -1,6 +1,6 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function runTextFile(_f, _postScript){
+function runTextFile(_f, _postScript = -1){
 	global.game_state = gameState.text;
 	with (obj_textbox) {
 		fname = _f;

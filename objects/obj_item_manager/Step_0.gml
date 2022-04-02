@@ -63,33 +63,24 @@ switch (global.game_state) {
 	
 	// When the player gets to choose between a few itmes in an encounter
 	case gameState.itemPick:
+		// If the hand is full, the encounter ends
+		if (!isObjInDeck(obj_itemslot, obj_item_manager.player_hand) && obj_item_manager.player_hand.f) {
+			runTextFile("itempick_fail1.txt", function() { 
+				encounterItemPickEnd();
+			});
+		}
+	
 		if (_select1 && position_meeting(mouse_x, mouse_y, obj_item)) {
 			var _selectedItem = instance_position(mouse_x, mouse_y, obj_item);
 			// If the selected card is part of the npc's hand
+			
 			if (isItemInDeck(_selectedItem, npc_hand)) {
 				addItem(_selectedItem, player_hand);
 				ds_list_delete(npc_hand.d, ds_list_find_index(npc_hand.d, _selectedItem));
-			}
-			
-			// Ends the item pick
-			refreshItemDisplay(npc_hand, player_hand);
-			deselectAllItems();
-			if (global.intro)
-				with (obj_trail_start) { 
-					first_card_picked = true;
-					// performs the step event imedeatly
-					event_perform(ev_step, ev_step);
-				}
-			else {
-				switch (global.encounter) {
-					case encounter.itemPick:
-						encounterItemPickEnd();
-						break;
-					
-					case encounter.chalMan:
-						encounterChalManEnd();
-						break;
-				}
+				// Ends the item pick
+				refreshItemDisplay(npc_hand, player_hand);
+				deselectAllItems();
+				endEncounter();
 			}
 		}
 		break;

@@ -7,4 +7,4 @@ if (compass_effect > 0) {
 }
 
 moveNextEncounter(next_encounter);
-encounter_count++;
+global.encounter_count++;

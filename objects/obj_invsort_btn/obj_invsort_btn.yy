@@ -1,13 +1,16 @@
 {
   "spriteId": {
-    "name": "spr_item_hbox",
-    "path": "sprites/spr_item_hbox/spr_item_hbox.yy",
+    "name": "spr_done_btn",
+    "path": "sprites/spr_done_btn/spr_done_btn.yy",
   },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_btn",
+    "path": "objects/obj_btn/obj_btn.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,

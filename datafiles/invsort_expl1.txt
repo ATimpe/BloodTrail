@@ -1,0 +1,4 @@
+Here you can sort out your inventory.
+The 4 slots at the top are your Hand. These are items you can access during encounters.
+The 4 on the bottom is your Pack. These stay in your inventory but cannot be used during encounters.
+Between encounters you can switch around these items as you please.

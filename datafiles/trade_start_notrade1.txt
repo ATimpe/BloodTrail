@@ -1,0 +1,6 @@
+A trader approaches you more tentatively than usual.
+>Trader
+I've heard things about you.
+>Trader
+Bad things...
+The trader marches away leaving you with nothing.

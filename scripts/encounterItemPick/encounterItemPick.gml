@@ -4,11 +4,14 @@ function encounterItemPick(){
 	generateItemPick();
 	startGameState(gameState.itemPick);
 	global.encounter = encounter.itemPick;
+	runTextFile("itempick_start1.txt", function() { 
+		global.game_state = gameState.itemPick;
+	});
 }
 
 function encounterItemPickEnd(){
 	runTextFile("itempick_end1.txt", function() { 
 		endGameState(gameState.itemPick);
-		stateBToll();
+		stateBTollStart();
 	});
 }

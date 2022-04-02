@@ -10,8 +10,8 @@ function encounterChalMan(){
 }
 
 function encounterChalManEnd(){
-	runTextFile("chalman_start1.txt", function() {
+	runTextFile("chalman_end1.txt", function() {
 		endGameState(gameState.itemPick);
-		stateBToll();
+		stateBTollStart();
 	});
 }

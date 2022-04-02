@@ -1,6 +1,6 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function drawItemStats(_name, _desc1, _desc2){
+function drawItemStats(_name, _desc1, _desc2 = ""){
 	draw_text(x + border + padding, 
 				y + border + padding, 
 				_name);

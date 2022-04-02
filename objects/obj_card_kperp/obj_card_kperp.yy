@@ -36,8 +36,6 @@
   },
   "resourceVersion": "1.0",
   "name": "obj_card_kperp",
-  "tags": [
-    "card_common",
-  ],
+  "tags": [],
   "resourceType": "GMObject",
 }

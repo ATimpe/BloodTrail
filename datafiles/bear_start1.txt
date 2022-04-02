@@ -1,0 +1,7 @@
+You come across a very large stalwart manwearing a bearskin cloak.
+>The Bear
+I am the Bear. Behind me is my cave. You can seek passage through it if you can beat me in combat.
+You may be able to skip ahead the trail a ways if you win.
+*op
+*Accept the Bear's offer #encounterBearFight
+*Decline and move on #encounterBearPass

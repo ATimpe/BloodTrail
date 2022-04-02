@@ -1,5 +1,5 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @desc Draw item stats
+
 event_inherited();
 
-drawItemStats(card_name, "Uses: " + string(uses), card_desc);
+drawItemStats(card_name, "Uses: " + string(uses), "Price: " + string(price));

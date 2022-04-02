@@ -2,6 +2,6 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function save(){
 	ini_open("save.dat");
-	//ini_write_real("save1", "encounter_high_score");
+	ini_write_real("save1", "encounter_high_score", global.encounter_high_score);
 	ini_close();
 }

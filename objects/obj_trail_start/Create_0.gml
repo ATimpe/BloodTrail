@@ -4,7 +4,7 @@ first_card_picked = false;
 
 runTextFile("intro1.txt", function() {
 	with (obj_item_manager) {
-		addItem(newChalice(obj_chal, 4), player_hand);
+		addItem(newChalice(obj_cup_chal, 4), player_hand);
 		refreshItemDisplayBottom(player_hand);
 	}
 	runTextFile("intro2.txt", function() {

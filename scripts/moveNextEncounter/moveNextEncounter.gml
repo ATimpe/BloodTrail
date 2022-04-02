@@ -13,5 +13,20 @@ function moveNextEncounter(_encounter){
 		case encounter.chalMan:
 			encounterChalMan();
 			break;
+		
+		case encounter.stump:
+			encounterStump();
+			break;
+		
+		case encounter.bear:
+			encounterBear();
+			break;
+		
+		case encounter.robber:
+			encounterRobber();
+			break;
+		
+		default:
+			throw "Error. Encounter not provided in moveNextEncounter."
 	}
 }

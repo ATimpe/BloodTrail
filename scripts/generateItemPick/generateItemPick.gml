@@ -5,20 +5,20 @@ function generateItemPick(_encounter = 0){
 		switch (_encounter) {
 			case encounter.chalMan:
 				setDeckSize(npc_hand, 3);
-				addItem(newChalice(obj_chal, 3), npc_hand);
-				addItem(newChalice(obj_chal, 3), npc_hand);
-				addItem(newChalice(obj_chal, 3), npc_hand);
+				addItem(newChalice(obj_cup_chal, 3), npc_hand);
+				addItem(newChalice(obj_cup_chal, 3), npc_hand);
+				addItem(newChalice(obj_cup_chal, 3), npc_hand);
 				with (npc_hand.d[| 0]) {
 					poisoned = true;
 				}
-				ds_list_shuffle(npc_hand);
+				ds_list_shuffle(npc_hand.d);
 				break;
 		
 			default:
 				setDeckSize(npc_hand, 3);
-				addItem(generateCard(0, 0), npc_hand);
-				addItem(generateCard(0, 0), npc_hand);
-				addItem(generateCard(0, 0), npc_hand);
+				addItem(newCard(generateCard(0, 0, true, npc_hand)), npc_hand);
+				addItem(newCard(generateCard(0, 0, true, npc_hand)), npc_hand);
+				addItem(newCard(generateCard(0, 0, true, npc_hand)), npc_hand);
 				break;
 		}
 		

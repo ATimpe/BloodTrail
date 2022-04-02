@@ -1,0 +1,5 @@
+This is a trader.
+You can trade items with them if you would like.
+Click on the items you'd like to have from their hand and offer some from yours as well.
+You can also offer gold which left clicking on will offer some and right clicking will return some.
+When you're finished, hit the Done button.

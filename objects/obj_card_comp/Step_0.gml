@@ -4,13 +4,14 @@
 // Inherit the parent event
 event_inherited();
 
-if (mouse_over && mouse_check_button_pressed(mb_right) && global.game_state == card_state_usable) {
+if (card_activated && global.game_state == card_state_usable && !selected) {
 	with (obj_game_manager) {
 		encounter_display = true;
 		compass_effect = 1;
 	}
 	
 	uses--;
+	
 	if (uses <= 0)
 		destroyItem(id);
 }

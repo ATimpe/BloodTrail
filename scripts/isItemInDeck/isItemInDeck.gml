@@ -12,3 +12,13 @@ function isObjInDeck(_objIndex, _deck){
 	
 	return false;
 }
+
+// Used for if you want to find if the deck has any children of a certain parent (also returns true if its the parent itself)
+function isObjChildInDeck(_objIndex, _deck){
+	for (var i = 0; i < ds_list_size(_deck.d); i++) {
+		if (object_is_ancestor(_deck.d[| i].object_index, _objIndex))
+			return true;
+	}
+	
+	return false;
+}

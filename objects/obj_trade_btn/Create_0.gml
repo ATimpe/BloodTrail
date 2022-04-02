@@ -1,3 +1,3 @@
 /// @desc This button lets the player finish inventory sorting
 
-mouse_over = false;
+event_inherited();
